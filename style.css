@@ -37,12 +37,15 @@ body{
     margin-right: auto;
 }
 nav {
+    height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
     transition: var(--trans);
     background-color: #fefefe;
@@ -115,18 +118,18 @@ ul li:hover a , .active{
 }
 
 .content img{
-    animation: img 1.8s infinite;
+    animation: img 2s infinite;
     position: relative;
 }
 
 @keyframes img {
     0%{
         left: 0;
-        bottom: 0;
+        top: 0;
     }
     50%{
-        top: 30px;
-        left: -20px;
+        top: 6px;
+        left: -10px;
     }
     100%{
         left: 0;
@@ -194,7 +197,9 @@ ul li:hover a , .active{
     align-items: center;
     margin: 0 30px;
 }
-
+.service img {
+    width: 420px;
+}
 .service h4{
     color: var(--main-color);
 }
