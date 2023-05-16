@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+:root{
+    --trans: 0.3s;
+    --color: #5c147e;
+    --main-color: #6d1f91;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+body{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(165, 122, 206, 0.9)
+}
+.logo{
+    margin: 0 25px;
+    animation: tfaha 0.3s;
+}
+.logo img{
+    width: 80px;
+    height: 60px;
+}
+@keyframes tfaha {
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    50%{
+        opacity: .5;
+        transform: translateX(-60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ul{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+ul li{
+    list-style: none;
+    padding: 10px 15px;
+}
+ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+ul li:hover a{
+    color: var(--color);
+}
+.content{
+    width: 100%;
+    height: 520px;
+    background: url('img/bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 120px;
+    position: relative;
+}
+.content h2{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px 1px #979494;
+    font-size: 50px;
+}
+.content span{
+    color: var(--color);
+}
+.content p{
+    font-size: 18px;
+}
+.content .btn{
+    display: flex;
+    justify-content: flex-start;
+}
+.content .btn button{
+    margin: 20px 10px 0px 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.content .btn button{
+    background-color: #eee;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: all var(--trans) ease;
+}
+.content .btn button:hover{
+    background-color: #fff;
+}
+.content .btn button:first-child{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.content .btn button:first-child:hover{
+    background-color: var(--color);
+}
+.animation{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
