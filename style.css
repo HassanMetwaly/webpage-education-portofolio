@@ -25,6 +25,10 @@ html {
     color: white;
 }
 
+span {
+    color: var(--color);
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -180,10 +184,6 @@ header .container .main-nav li a:hover::before {
     font-size: 1.2rem;
 }
 
-.landing .container .text span {
-    color: var(--main-color);
-}
-
 .landing .container .text .btn {
     display: flex;
     justify-content: flex-start;
@@ -223,8 +223,8 @@ header .container .main-nav li a:hover::before {
     font-size: 2.2rem;
 }
 
-.landing .container .text p ,
-.about .container .text p{
+.landing .container .text p,
+.about .container .text p {
     color: #060606;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -286,31 +286,36 @@ header .container .main-nav li a:hover::before {
 /* End Landing */
 /* Start about */
 .about {
-    position: relative;   
+    position: relative;
 }
-.about .container{
+
+.about .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 60px;
     overflow: hidden;
 }
-.about .container .img img{
+
+.about .container .img img {
     width: 320px;
     height: 260px;
     padding: 15px;
     margin-top: 15px;
 }
+
 .about .container .text {
     padding: 15px;
     margin-top: 15px;
     width: calc(100% - 350px);
     box-shadow: 0 0 3px var(--color);
 }
-.about .container .text h3{
+
+.about .container .text h3 {
     color: var(--main-color);
 }
-.about .container .text h1{
+
+.about .container .text h1 {
     font-size: 30px;
     font-weight: 900;
 }
@@ -320,6 +325,7 @@ header .container .main-nav li a:hover::before {
         justify-content: center;
         align-items: center;
     }
+
     .about .container .text {
         width: 90%;
         text-align: center;
@@ -328,7 +334,7 @@ header .container .main-nav li a:hover::before {
 
 /* section icon */
 
-.about .container .icon{
+.about .container .icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
