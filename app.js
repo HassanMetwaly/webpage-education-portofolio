@@ -1,7 +1,7 @@
 const nav = document.querySelector('nav');
 
 const scrol = () => {
-    nav.style.boxShadow = '0 0 1.8px #111'
+    nav.style.boxShadow = '0 0 10px #ddd'
 }
 
 window.onscroll = function () {
