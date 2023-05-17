@@ -1,4 +1,4 @@
-/* start const code */
+/* Start const code */
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -68,7 +68,7 @@ a {
     }
 }
 
-/* End Global */
+/* End const code */
 /* Start Header */
 header {
     background-color: white;
